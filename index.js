@@ -35,9 +35,9 @@ const getAndValidateUrl = (req) => {
     let { url } = req.body;
      
   // Add 'http://' if the user-provided URL does not include a protocol
-  if (!/^https?:\/\//i.test(url)) {
-    url = 'http://' + url;
-  }
+  // if (!/^https?:\/\//i.test(url)) {
+  //   url = 'http://' + url;
+  // }
 
     try {
       hostname = new URL(url).hostname;
