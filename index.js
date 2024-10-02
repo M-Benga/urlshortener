@@ -50,7 +50,7 @@ const getAndValidateUrl = (req) => {
     dns.lookup(hostname, (err, address, family) => {
       if (err) {
         console.log('Host', hostname);
-        reject('invalid URLLL');
+        reject('invalid url');
       } else {
         console.log('Ip Address:', address);
         console.log('Family:', family);
